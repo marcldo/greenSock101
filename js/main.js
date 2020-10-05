@@ -32,10 +32,42 @@
 // //"set" tween doesn't animate just moves element to the position indicated. 
 // gsap.set('ul', { y: 100 });
 
-gsap.from('body', { backgroundColor: 'white', duration: 1 })
+//first demo
+gsap.from(
+  'body',
+  {
+    backgroundColor: 'white',
+    duration: 1.7,
+    ease: 'none'
+  })
 
-gsap.from(['h1', 'p'], { delay: 1, y: -20, opacity: 0, stagger: 0.1 })
+gsap.from(
+  ['h1', 'p'],
+  {
+    delay: 1.5,
+    duration: 0.6,
+    y: -20,
+    opacity: 0,
+    stagger: 0.2,
+    ease: 'power1.out'
+  })
 
-gsap.from(['img', 'h2'], { delay: 1.7, opacity: 0, duration: 1 })
+gsap.from(
+  ['img', 'h2'],
+  {
+    delay: 2.8,
+    opacity: 0,
+    duration: 0.7,
+    ease: 'none'
+  })
 
-gsap.from('ul li', { delay: 3, opacity: 0, y: -10, stagger: 0.2, duration: 1 })
+gsap.from(
+  'ul li',
+  {
+    delay: 4,
+    opacity: 0,
+    y: -20,
+    stagger: 0.2,
+    duration: 0.6,
+    ease: 'power1.out'
+  })
